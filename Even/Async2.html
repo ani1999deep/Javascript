@@ -7,10 +7,26 @@
       <title>async await in Javascript</title>
 </head>
 <body>
+      <h1>Async And Await</h1>
       <script>
- 
+ async function getdata()
+ {
 
+      let handlePromice=new Promise((resolve,reject)=>{
 
+     
+            setTimeout(()=>{
+                  resolve('All Done')
+            },2000)
+      })
+console.log('a')
+     let x=await handlePromice;
+
+     console.log(x);
+     console.log('c')
+ }
+
+ getdata()
       </script>
 </body>
 </html>
