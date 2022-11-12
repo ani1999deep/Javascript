@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json format</title>
+  </head>
+  <body>
+    <script>
+      var Student =[ {
+        student1: {
+          id: 1,
+          name: "Avi",
+          class: "A",
+          age: 20,
+        },
+        student2: {
+          id: 2,
+          name: "Ani",
+          class: "B",
+          age: 23,
+        },
+        student3: {
+          id: 3,
+          name: "Ivan",
+          class: "C",
+          age: 23,
+        },
+        student4: {
+          id: 4,
+          name: "Aki",
+          class: "D",
+          age: 22,
+        },
+      }];
+for(var a=0;a<Student.length;a++){
+
+      document.write(Student[a].age)
+}
+    </script>
+  </body>
+</html>
