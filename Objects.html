@@ -1,64 +1,58 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Objects</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-// Object:-
-var a={
+      // Object:
+      var a = {
+        fname: "ani",
 
-    fname:"ani",
+        lname: "deep",
 
-    lname:"deep",
+        age: 18,
 
-    age:18,
+        email: "ani@gmail.com",
 
-    email:"ani@gmail.com",
+        // Array:-
 
+        movies: ["dhoom", "dhoom2", "dhoom3"],
 
-// Array:-
+        // Object
 
-    movies:["dhoom","dhhom2","dhoom3"],
+        dept: {
+          aeie: "2nd",
 
-// Object
-    
-dept:{
+          cse: "1st",
+        },
 
-"aeie":"2nd",
+        // Method:-
 
-"cse":"1st"
+        salary: function () {
+          return 250000;
+        },
 
-},
+        fullName: function () {
+          return this.fname + " " + this.lname;
+        },
+      };
 
+      // console.log(a);
 
-// Method:-
+      console.log(a);
 
-    salary: function(){
-return 250000;
-    },
+      // document.write(a.lname);
 
-    fullName: function(){
+      // document.write(a.movies[1]);
 
-        return this.fname + " " + this.lname ;
-    }
-}
+      // document.write(a.salary())
 
-// console.log(a);
+      // document.write(a.fullName());
 
-console.log(a);
-
-// document.write(a.lname);
-
-// document.write(a.movies[1]);
-
-// document.write(a.salary())
-
-// document.write(a.fullName());
-
-document.write(a.dept.aeie);
+      document.write(a.dept.aeie);
     </script>
-</body>
+  </body>
 </html>
