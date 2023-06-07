@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <h4>When you pass an array as a parameter, if the function changes any of the array's values, that change is visible outside the function</h4>
+      
+      <script>
+            function myFunc(theArr){
+
+                  theArr[0]=20;
+
+            }
+
+            const arr=[45];
+
+            console.log(arr[0]);
+             myFunc(arr);
+
+             console.log(arr[0]);
+      </script>
+</body>
+</html>
