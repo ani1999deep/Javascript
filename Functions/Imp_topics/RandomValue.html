@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to select a random</title>
+  </head>
+  <body>
+    <script>
+      my_arr = [
+        "THE ROOM ON THE ROOF BY RUSKIN BOND",
+        "THE COMPLETE ADVENTURES OF FELUDA BY SATYAJIT RAY",
+        "THE GOD OF SMALL THINGS BY ARUNDHATI ROY",
+        "THE GREAT INDIAN NOVEL BY SHASHI THAROOR",
+        "Los Angeles",
+        "Dubai",
+      ];
+
+      function elemenet_Selector(arr) {
+        array_length = arr.length;
+        value = Math.random() * array_length;
+        indexValue = Math.floor(value);
+        return arr[indexValue];
+      }
+
+      console.log(elemenet_Selector(my_arr));
+    </script>
+  </body>
+</html>

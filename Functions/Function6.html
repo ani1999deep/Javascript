@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4>
+      Function expressions are convenient when passing a function as an argument
+      to another function. The following example shows a map function that
+      should receive a function as first argument and an array as second
+      argument:
+    </h4>
+
+    <script>
+      function map(f, a) {
+        const result = new Array(a.length);
+        for (let i = 0; i < a.length; i++) {
+          result[i] = f(a[i]);
+        }
+        return result;
+      }
+      const cube = function (x) {
+        return x * x * x;
+      };
+
+      const numbers = [0, 1, 2, 3, 4, 5];
+      console.log(map(cube, numbers));
+    </script>
+  </body>
+</html>
